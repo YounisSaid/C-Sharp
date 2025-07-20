@@ -230,7 +230,7 @@
             //employee.Id = 1; // Using the setter
             //employee.SetName("John Doe"); // Using the setter
             //Console.WriteLine($"Employee ID: {employee.Id}");
-            Employee employee = new Employee();
+            //Employee employee = new Employee();
             //employee.Id = 1; // Using the setter
             //employee.SetName("John Doe"); // Using the setter
 
