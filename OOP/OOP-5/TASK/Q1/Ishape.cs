@@ -8,6 +8,7 @@ namespace TASK.Q1
 {
     internal interface IShape
     {
+        
         public double Area { get; }
         public void DisplayShapeInfo();
     }

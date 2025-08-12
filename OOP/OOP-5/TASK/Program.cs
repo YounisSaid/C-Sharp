@@ -24,7 +24,7 @@ namespace TASK
        
            Question 3:
            Can an interface contain fields in C#?
-           a) Yes
+           a) No
           
            
            Question 4:
@@ -33,7 +33,7 @@ namespace TASK
           
            Question 5:
            Which keyword is used to implement an interface in a class in C#?
-           d) implements
+           d) implements :
            
            Question 6:
            Can an interface contain static methods in C#?
@@ -95,12 +95,12 @@ namespace TASK
             // The PushNotificationService class simulates sending a push notification by outputting a message to the console.
             // In the Main method, we create instances of each notification service class and call the SendNotification method with sample recipient and message values.
             // This implementation allows you to easily switch between different notification channels by creating new classes that implement the INotificationService interface and provide the specific logic for each channel.
-            INotificationService emailService = new EmailNotificationService();
-            emailService.SendNotification("this is a test email!", "Ahmed");
-            INotificationService smsService = new SmsNotificationService();
-            smsService.SendNotification("this is a test sms!", "Ali");
-            INotificationService pushService = new PushNotificationService();
-            pushService.SendNotification("this is a test push notification!", "Sara");
+            //INotificationService emailService = new EmailNotificationService();
+            //emailService.SendNotification("this is a test email!", "Ahmed");
+            //INotificationService smsService = new SmsNotificationService();
+            //smsService.SendNotification("this is a test sms!", "Ali");
+            //INotificationService pushService = new PushNotificationService();
+            //pushService.SendNotification("this is a test push notification!", "Sara");
 
 
 
