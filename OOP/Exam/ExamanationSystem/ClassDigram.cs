@@ -76,8 +76,8 @@
 //        + ShowPracticalExamResults(List~Question~)
 //        + ShowFinalExamResults(List~Question~)
 //        + PrintExamTime(Stopwatch)
-//        + BreakTimerMessage()
-//        - GetValidChoice(int, int)
+//        + BreakTimerMessage() //Public
+//        - GetValidChoice(int, int) //Private
 //        - GetBody()
 //        - GetMark()
 //        - GetMcqAnswers(Question)
