@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Entity FrameworkCore => ORM
+         // ORM => Object Relational Mapper
+         // DbContext , Entities
+
+            // 2 Approaches
+            // Database First
+            // Code First
+
+            // ADO.Net Vs Dapper (Mini ORM)
+
         }
     }
 }
