@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EF01.Migrations
 {
     [DbContext(typeof(CompanyDbContext))]
-    [Migration("20250909130142_AddEmploeeTable")]
-    partial class AddEmploeeTable
+    [Migration("20250910235022_AddEmployeeTable")]
+    partial class AddEmployeeTable
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,29 @@ namespace EF01.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("DEMO.Models.Department", b =>
+                {
+                    b.Property<int>("DeptId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("DeptId"));
+
+                    b.Property<DateTime>("DateOfCreation")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DeptName")
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(100)
+                        .HasColumnType("varchar")
+                        .HasDefaultValue("Hr")
+                        .HasColumnName("DeptIDD");
+
+                    b.HasKey("DeptId");
+
+                    b.ToTable("Departments");
+                });
 
             modelBuilder.Entity("EF01.Models.Employee", b =>
                 {
